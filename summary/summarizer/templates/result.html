@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="results-container">
+    <h1>Video Analysis Results</h1>
+    <div class="summary">
+        {% for part in summary %}
+            <h2>{{ part.title }}</h2>
+            <p>{{ part.content }}</p>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
